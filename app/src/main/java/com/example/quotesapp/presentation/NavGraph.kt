@@ -21,7 +21,8 @@ fun NavGraph(modifier: Modifier = Modifier,
         }
         composable(route = "FavoriteScreen")
         {
-            FavoriteScreen(viewModel)
+            FavoriteScreen(viewModel,
+                navController = navcontroller)
         }
     }
 }
